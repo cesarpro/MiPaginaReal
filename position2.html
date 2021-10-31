@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.relative1 {
+    position: relative;
+    left: 100px;
+    border: 3px solid #73AD21;
+    width: 200px;
+    height: 60px;
+}
+
+div.relative11 {
+    position: relative;
+    right: -290px;
+	top: -50px;
+    border: 3px solid #73AD21;
+    width: 200px;
+    height: 60px;
+}
+
+div.relative_center {
+    position: relative;
+	top: -10px;
+    border: 3px solid #73AD21;
+    width: 200px;
+    height: 60px;
+margin:0 auto;
+}
+
+</style>
+</head>
+<body>
+
+<h2>position: relative;</h2>
+
+<p>An element with position: relative; is positioned relative to its normal position:</p>
+
+<div class="relative1">
+This div element has position: relative clase=relative1;
+</div>
+
+<div class="relative11">
+This div element has position: relative, clase=relative11;
+</div>
+
+<div class="relative_center">
+This div element has position: relative, clase=relative_center;
+</div>
+
+</body>
+
+
+
+<head>
+<style>
+div.fixed {
+    position: fixed;
+    bottom: 5px;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+h1.fixed2 {
+    position: fixed;
+    top: 5px;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: fixed;</h2>
+
+<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+<div class="fixed">
+This div element has position: fixed; clase="fixed"
+</div>
+
+<h1 class="fixed2">Fixed2</h1>
+
+
+
+<head>
+<style>
+div.relative {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    border: 3px solid #73AD21;
+	margin: 0 auto;
+} 
+
+div.absolute {
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+</style>
+</head>
+<body>
+
+<h2>position: absolute;</h2>
+
+<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+
+<div class="relative">This div element has position: relative;
+  <div class="absolute">This div element has position: absolute;
+<p>Si el contenido de su interior exede el tamaño de este div, entnces el contenido se vera exediendo sus limites</p>
+</div>
+</div>
+
+</body>
+
+
+
+
+
+<head>
+<style>
+img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<img src="w3css.gif" width="100" height="140">
+<p>Because the image has a z-index of -1, it will be placed behind the text.</p>
+
+</body>
+
+
+<body class="body1">
+<style>
+
+body.body1 {background: grey;}
+div.relative_1 {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border: 1px solid #73AD21;
+    margin: 0 auto;
+    background: Blue;
+} 
+
+div.absolute_1 {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 385px;
+    height: 100px;
+    border: 1px solid #73AD21;
+    background: white;
+}
+
+div.absolute_2 {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 385px;
+    height: 100px;
+    border: 1px solid #73AD21;
+    background: white;
+}
+div.absolute_3 {
+    position: absolute;
+    top: 130px;
+    right: 10px;
+    width: 780px;
+    height: 100px;
+    border: 1px solid #73AD21;
+    background: white;
+}
+
+div.absolute_4 {
+    position: absolute;
+    top: 240px;
+    left: 10px;
+    width: 555px;
+    height: 100px;
+    border: 1px solid #73AD21;
+    background: white;
+}
+
+div.absolute_5 {
+    position: absolute;
+    top: 240px;
+    right: 10px;
+    width: 215px;
+    height: 100px;
+    border: 1px solid #73AD21;
+    background: pink;
+}
+
+div.fixed_1 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 500px;
+    height: 50px;
+    border: 3px solid #73AD21;
+    background: #73AD21}
+</style>
+
+
+<div class="relative_1">esto es un div que tiene posicion relativa;
+  
+</div>
+
+</br>
+</hr>
+<div class="relative_1">This div element has position: relative;
+  <div class="absolute_1">este es un div que tiene posicion absoluta 1;
+<p>Si el contenido del inerior excede al tamaño del panel, el contenido se pierde</p></div>
+  <div class="absolute_2">este es un div que tiene posicion absoluta 2;</div>
+  <div class="absolute_3"><p>este es un div que tiene posicion absoluta con formato de parrafo 3</p></div>
+  <div class="absolute_4">este es un div que tiene posicion absoluta 4;</div>
+  <div class="absolute_5">este es un div que tiene posicion absoluta 5;</div>
+</div>
+
+<div class="fixed_1">
+This div element has position: fixed;
+</div>
+
+</br></br></br>
+</body>
+
+
+
+
+
+
+
+</html>
+
+
+
+
